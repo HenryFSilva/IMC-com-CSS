@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="imc.css">
+</head>
+<body>
+    <div id="geral">
+        <div id="bemvindo">
+            <h1>Seja bem-vindo!!</h1>
+            <h2>Vamos ver se voce esta no peso ideal?</h2>
+        </div>
+
+        <div id="tabela">
+            <h2>Tabela de mediçao</h2>
+        <h3 id="desExercicio">
+            Resultado abaixo de 17 - Muito abaixo do peso;<br>
+            Resultado entre 17 e 18,49 - Abaixo do peso;<br>
+            Resultado entre 18,5 e 24,99 - Peso-ideal;<br>
+            Resultado entre 25 e 29,99 - Sobrepeso;<br>
+            Resultado entre 30 e 34,9 - Obesidade grau I;<br>
+            Resultafo entre 35 3 39,9 - Obesidade grau II (severa);<br>
+            Resultado acima de 40 - Obesidade grau III (morbida);<br>
+        </h3>
+        </div>
+    </div>
+
+    <form onsubmit="return calcular(event)">
+
+        <h2>Informaçao da primeira pessoa</h2><br>
+        <label>Digite seu nome:</label><br><br>
+        <input type="text" name="nome1" id="nome1"/><br><br>
+
+        <label>Digite seu peso:</label><br><br>
+        <input type="text" nome="peso1" id="peso1" placeholder="Exemplo: 65" /><br><br>
+
+        <label>Digite sua altura:</label><br><br>
+        <input type="text" nome="altura1" id="altura1" placeholder="Exemplo: 1.90" /><br><br>
+
+
+        <h2>Informaçao da segunda pessoa</h2><br>
+        <label>Digite seu nome:</label><br><br>
+        <input type="text" name="nome2" id="nome2"/><br><br>
+
+        <label>Digite seu peso:</label><br><br>
+        <input type="text" nome="peso2" id="peso2" placeholder="Exemplo: 65" /><br><br>
+
+        <label>Digite sua altura:</label><br><br>
+        <input type="text" nome="altura2" id="altura2" placeholder="Exemplo: 1.90" /><br><br>
+
+
+        <h2>Informaçao da terceira pessoa</h2><br>
+        <label>Digite seu nome:</label><br><br>
+        <input type="text" name="nome3" id="nome3"/><br><br>
+
+        <label>Digite seu peso:</label><br><br>
+        <input type="text" nome="peso3" id="peso3" placeholder="Exemplo: 65" /><br><br>
+
+        <label>Digite sua altura:</label><br><br>
+        <input type="text" nome="altura3" id="altura3" placeholder="Exemplo: 1.90" /><br><br>
+
+
+        <input type="submit" value="Calcular IMC">
+    </form>
+
+    <div id="resultado1"></div>
+    <div id="resultado2"></div>
+    <div id="resultado3"></div>
+
+
+    <script src="imc.henry.js"></script>
+</body>
+</html>
